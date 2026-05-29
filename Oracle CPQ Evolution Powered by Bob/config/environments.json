@@ -1,0 +1,51 @@
+{
+  "_comment": "IMPORTANT: The 'output_path' field is REQUIRED to download content. Specify an absolute path where downloaded files will be saved.",
+  "environments": {
+    "test": {
+      "name": "Test",
+      "host": "test.bigmachines.com",
+      "protocol": "https",
+      "description": "Testing environment",
+      "download_mode": "all",
+      "specific_processes": [],
+      "output_path": "C:\\MyProjects\\CPQ-Test"
+    },
+    "dev": {
+      "name": "Development",
+      "host": "dev.bigmachines.com",
+      "protocol": "https",
+      "description": "Development environment",
+      "download_mode": "all",
+      "specific_processes": [],
+      "output_path": "C:\\MyProjects\\CPQ-Dev"
+    },
+    "prod": {
+      "name": "Production",
+      "host": "prod.bigmachines.com",
+      "protocol": "https",
+      "description": "Production environment",
+      "download_mode": "specific",
+      "specific_processes": ["oraclecpqo_bmClone_1", "metalsaProcess"],
+      "output_path": "C:\\MyProjects\\CPQ-Prod"
+    }
+  },
+  "credentials": {
+    "test": {
+      "username": "",
+      "password": ""
+    },
+    "dev": {
+      "username": "",
+      "password": ""
+    },
+    "prod": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "settings": {
+    "java_home": "C:\\Program Files\\Java\\jdk-25.0.3",
+    "cpq_toolkit_path": "C:\\CPQ\\CPQToolkit-windows\\CPQToolkit-24.4.0-SNAPSHOT\\bin\\cpq-toolkit.bat",
+    "workspace_path": "C:\\CPQ\\workspace"
+  }
+}
